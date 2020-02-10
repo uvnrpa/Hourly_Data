@@ -1,8 +1,8 @@
 % Station Finse, mean hourly (UTC hour +/- 30 minutes) irradiances and sampling fraction (0= complete loss of measurements, 1=lossfree measurement)
-% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: bjorn.johnsen@nrpa.no)
+% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
 % Calculations and calibrations: Bjørn Johnsen, Statens strålevern (Norwegian Radiation Protection Authority
-% E-mail: Bjorn.Johnsen@nrpa.no
+% E-mail: Bjorn.Johnsen@dsa.no
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -18,7 +18,7 @@
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
 % Gaps in measurements complemented with the following data sets:
-% Strång-based data (http://strang.smhi.se/extraction/index.php) period: 2011	2012	2013	2014	2015	2016	2017	
+% Strång-based data (http://strang.smhi.se/extraction/index.php) period: 2011	2012	2013	2014	2015	2016	2017	2018	2019	
 % Octa-based data (http://eklima.met.no) period: 1900	1901	1902	1903	1904	1905	1906	1907	1908	1909	1910	
 % UV-Biometer based data (Finse only) period: 1996	- 2010
 % Pyranometer-based data (http://eklima.met.no, http://lmt.bioforsk.no. For Bergen: Data provided by Jan.Olseth@uib.no). Period: 1900	1901	1902	1903	1904	1905	1906	1907	1908	1909	1910	
@@ -6637,12 +6637,12 @@
 2008	10	2	276	9	  1.8840E-02	  1.8980E-02	  1.2103E-01	  1.1626E+01	  3.7594E-02	  5.2735E-03	  2.2965E-02	  6.6408E-04	  2.1111E-01	  2.5974E+01	  3.3685E-04	1.00
 2008	10	2	276	10	  3.0238E-02	  3.0464E-02	  2.1043E-01	  1.6353E+01	  6.2447E-02	  9.4313E-03	  4.1269E-02	  1.1130E-03	  3.0381E-01	  3.5973E+01	  4.6760E-04	1.00
 2008	10	2	276	11	  3.8598E-02	  3.8922E-02	  2.6993E-01	  2.1620E+01	  7.9812E-02	  1.2234E-02	  5.3549E-02	  1.4166E-03	  3.9592E-01	  5.4268E+01	  7.4059E-04	0.72
-2008	10	2	276	12	  3.8698E-02	  3.9070E-02	  2.5793E-01	  2.3739E+01	  7.8478E-02	  1.1533E-02	  5.0405E-02	  1.3676E-03	  4.2990E-01	  6.2192E+01	  8.6228E-04	0.00
-2008	10	2	276	13	  3.2704E-02	  3.3059E-02	  2.0452E-01	  2.2379E+01	  6.4508E-02	  8.8866E-03	  3.8780E-02	  1.1111E-03	  3.9935E-01	  6.0522E+01	  8.4697E-04	0.00
-2008	10	2	276	14	  1.9465E-02	  1.9710E-02	  1.0786E-01	  1.5374E+01	  3.6683E-02	  4.6353E-03	  1.9674E-02	  6.2378E-04	  2.6990E-01	  4.2321E+01	  5.9487E-04	0.00
-2008	10	2	276	15	  7.7159E-03	  7.8362E-03	  3.2139E-02	  7.5299E+00	  1.3364E-02	  1.5353E-03	  5.7730E-03	  2.2031E-04	  1.2966E-01	  2.0908E+01	  2.9439E-04	0.00
-2008	10	2	276	16	  2.9052E-03	  2.9622E-03	  7.6697E-03	  3.5396E+00	  4.5149E-03	  5.1469E-04	  1.5250E-03	  6.9154E-05	  5.9936E-02	  9.2930E+00	  1.2757E-04	0.00
-2008	10	2	276	17	  1.1813E-04	  1.2066E-04	  3.1666E-04	  1.5804E-01	  1.7855E-04	  2.3786E-05	  6.8841E-05	  2.5138E-06	  2.6417E-03	  3.4181E-01	  4.1763E-06	0.00
+2008	10	2	276	12	  3.8698E-02	  3.9070E-02	  2.5790E-01	  2.3686E+01	  7.8478E-02	  1.1517E-02	  5.0375E-02	  1.3668E-03	  4.2979E-01	  6.1639E+01	  8.5356E-04	0.00
+2008	10	2	276	13	  3.2704E-02	  3.3059E-02	  2.0450E-01	  2.2316E+01	  6.4508E-02	  8.8706E-03	  3.8750E-02	  1.1103E-03	  3.9922E-01	  5.9868E+01	  8.3664E-04	0.00
+2008	10	2	276	14	  1.9465E-02	  1.9710E-02	  1.0784E-01	  1.5331E+01	  3.6683E-02	  4.6269E-03	  1.9659E-02	  6.2330E-04	  2.6981E-01	  4.1864E+01	  5.8762E-04	0.00
+2008	10	2	276	15	  7.7159E-03	  7.8362E-03	  3.2135E-02	  7.5089E+00	  1.3364E-02	  1.5326E-03	  5.7686E-03	  2.2014E-04	  1.2962E-01	  2.0682E+01	  2.9080E-04	0.00
+2008	10	2	276	16	  2.9052E-03	  2.9622E-03	  7.6687E-03	  3.5297E+00	  4.5149E-03	  5.1376E-04	  1.5238E-03	  6.9101E-05	  5.9916E-02	  9.1926E+00	  1.2601E-04	0.00
+2008	10	2	276	17	  1.1813E-04	  1.2066E-04	  3.1662E-04	  1.5760E-01	  1.7855E-04	  2.3743E-05	  6.8788E-05	  2.5119E-06	  2.6408E-03	  3.3811E-01	  4.1254E-06	0.00
 2008	10	2	276	18	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	0.00
 2008	10	2	276	19	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	0.40
 2008	10	2	276	20	 -9.9789E-05	 -9.8812E-05	 -3.8765E-04	  4.7731E-03	 -2.1043E-04	 -2.7638E-04	 -3.1861E-04	 -6.3781E-06	 -6.3113E-05	  1.1728E-02	  1.1045E-07	0.98

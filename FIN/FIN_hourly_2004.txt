@@ -1,8 +1,8 @@
 % Station Finse, mean hourly (UTC hour +/- 30 minutes) irradiances and sampling fraction (0= complete loss of measurements, 1=lossfree measurement)
-% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: bjorn.johnsen@nrpa.no)
+% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
 % Calculations and calibrations: Bjørn Johnsen, Statens strålevern (Norwegian Radiation Protection Authority
-% E-mail: Bjorn.Johnsen@nrpa.no
+% E-mail: Bjorn.Johnsen@dsa.no
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -18,7 +18,7 @@
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
 % Gaps in measurements complemented with the following data sets:
-% Strång-based data (http://strang.smhi.se/extraction/index.php) period: 2011	2012	2013	2014	2015	2016	2017	
+% Strång-based data (http://strang.smhi.se/extraction/index.php) period: 2011	2012	2013	2014	2015	2016	2017	2018	2019	
 % Octa-based data (http://eklima.met.no) period: 1900	1901	1902	1903	1904	1905	1906	1907	1908	1909	1910	
 % UV-Biometer based data (Finse only) period: 1996	- 2010
 % Pyranometer-based data (http://eklima.met.no, http://lmt.bioforsk.no. For Bergen: Data provided by Jan.Olseth@uib.no). Period: 1900	1901	1902	1903	1904	1905	1906	1907	1908	1909	1910	
@@ -7018,12 +7018,12 @@
 2004	10	18	292	6	  1.3872E-04	  1.4539E-04	  5.7981E-04	  1.2801E-01	  2.5151E-04	  1.0616E-04	  1.8650E-04	  4.8427E-06	  2.2329E-03	  2.9824E-01	  3.8480E-06	1.00
 2004	10	18	292	7	  1.7806E-03	  1.8433E-03	  6.8933E-03	  1.8893E+00	  2.9711E-03	  6.2755E-04	  1.5659E-03	  5.7349E-05	  3.2121E-02	  4.2866E+00	  5.4229E-05	1.00
 2004	10	18	292	8	  5.7370E-03	  5.8303E-03	  2.8827E-02	  4.9538E+00	  1.0397E-02	  1.3535E-03	  5.5734E-03	  1.8261E-04	  8.5472E-02	  1.1364E+01	  1.4444E-04	0.98
-2004	10	18	292	9	  1.1412E-02	  1.1546E-02	  6.6256E-02	  8.2596E+00	  2.1926E-02	  2.8172E-03	  1.2387E-02	  3.7364E-04	  1.4833E-01	  1.9963E+01	  2.6853E-04	0.02
-2004	10	18	292	10	  1.6024E-02	  1.6194E-02	  1.0075E-01	  1.0404E+01	  3.1769E-02	  4.4361E-03	  1.9264E-02	  5.4407E-04	  1.9123E-01	  2.6399E+01	  3.6726E-04	0.00
-2004	10	18	292	11	  1.4857E-02	  1.5006E-02	  9.6935E-02	  9.0960E+00	  2.9934E-02	  4.3307E-03	  1.8868E-02	  5.1471E-04	  1.6841E-01	  2.2940E+01	  3.1860E-04	0.00
-2004	10	18	292	12	  1.3341E-02	  1.3478E-02	  8.5967E-02	  8.3415E+00	  2.6730E-02	  3.8175E-03	  1.6623E-02	  4.5898E-04	  1.5403E-01	  2.1086E+01	  2.9303E-04	0.00
-2004	10	18	292	13	  1.2865E-02	  1.3011E-02	  7.7307E-02	  8.8726E+00	  2.5050E-02	  3.3806E-03	  1.4546E-02	  4.2709E-04	  1.6196E-01	  2.2626E+01	  3.1522E-04	0.00
-2004	10	18	292	14	  6.7542E-03	  6.8457E-03	  3.6314E-02	  5.4055E+00	  1.2556E-02	  1.4977E-03	  6.5663E-03	  2.1301E-04	  9.6151E-02	  1.3178E+01	  1.7790E-04	0.93
+2004	10	18	292	9	  1.1412E-02	  1.1546E-02	  6.6248E-02	  8.2395E+00	  2.1926E-02	  2.8125E-03	  1.2378E-02	  3.7338E-04	  1.4828E-01	  1.9782E+01	  2.6572E-04	0.02
+2004	10	18	292	10	  1.6024E-02	  1.6194E-02	  1.0073E-01	  1.0360E+01	  3.1769E-02	  4.4237E-03	  1.9240E-02	  5.4342E-04	  1.9113E-01	  2.6000E+01	  3.6109E-04	0.00
+2004	10	18	292	11	  1.4857E-02	  1.5006E-02	  9.6915E-02	  9.0571E+00	  2.9934E-02	  4.3186E-03	  1.8845E-02	  5.1409E-04	  1.6832E-01	  2.2594E+01	  3.1325E-04	0.00
+2004	10	18	292	12	  1.3341E-02	  1.3478E-02	  8.5950E-02	  8.3058E+00	  2.6730E-02	  3.8068E-03	  1.6603E-02	  4.5843E-04	  1.5395E-01	  2.0767E+01	  2.8810E-04	0.00
+2004	10	18	292	13	  1.2865E-02	  1.3011E-02	  7.7291E-02	  8.8347E+00	  2.5050E-02	  3.3712E-03	  1.4528E-02	  4.2657E-04	  1.6187E-01	  2.2284E+01	  3.0992E-04	0.00
+2004	10	18	292	14	  6.7542E-03	  6.8457E-03	  3.6309E-02	  5.3907E+00	  1.2556E-02	  1.4947E-03	  6.5611E-03	  2.1284E-04	  9.6119E-02	  1.3043E+01	  1.7581E-04	0.93
 2004	10	18	292	15	  1.5336E-03	  1.5673E-03	  7.1308E-03	  1.4579E+00	  2.6596E-03	  3.3458E-04	  1.2981E-03	  4.8756E-05	  2.5055E-02	  3.0910E+00	  3.8281E-05	1.00
 2004	10	18	292	16	  1.6707E-04	  1.7793E-04	  5.5459E-04	  2.3392E-01	  2.5776E-04	 -3.2078E-05	  3.4711E-05	  3.7481E-06	  3.9644E-03	  4.9509E-01	  6.2079E-06	1.00
 2004	10	18	292	17	 -2.8094E-05	 -2.7369E-05	 -1.2044E-04	  2.5763E-03	 -5.8268E-05	 -7.6707E-05	 -8.7933E-05	 -1.8807E-06	  8.9171E-06	  5.2352E-03	  6.4965E-08	0.98

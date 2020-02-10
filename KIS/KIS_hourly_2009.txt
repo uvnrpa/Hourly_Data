@@ -1,8 +1,8 @@
 % Station Kise, mean hourly (UTC hour +/- 30 minutes) irradiances and sampling fraction (0= complete loss of measurements, 1=lossfree measurement)
-% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: bjorn.johnsen@nrpa.no)
+% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
 % Calculations and calibrations: Bjørn Johnsen, Statens strålevern (Norwegian Radiation Protection Authority
-% E-mail: Bjorn.Johnsen@nrpa.no
+% E-mail: Bjorn.Johnsen@dsa.no
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -21,7 +21,7 @@
 % Strång-based data (http://strang.smhi.se/extraction/index.php) period: 2010	
 % Octa-based data (http://eklima.met.no) period: 1901	1902	1903	1904	1905	1906	1907	1908	1909	1910	
 % UV-Biometer based data (Finse only) period: 1900	- 1900
-% Pyranometer-based data (http://eklima.met.no, http://lmt.bioforsk.no. For Bergen: Data provided by Jan.Olseth@uib.no). Period: 1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2011	2012	2013	2014	2015	2016	2017	
+% Pyranometer-based data (http://eklima.met.no, http://lmt.bioforsk.no. For Bergen: Data provided by Jan.Olseth@uib.no). Period: 1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2011	2012	2013	2014	2015	2016	2017	2018	2019	
 % Seasonally mean period: 1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	
 %
 % Columns: Year	Mon	Day	Daynum	Hour	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
@@ -4243,8 +4243,8 @@
 2009	6	25	176	15	  7.2647E-02	  7.3189E-02	  5.3681E-01	  3.0358E+01	  1.5837E-01	  3.1797E-02	  1.2364E-01	  2.8370E-03	  5.7400E-01	  8.1082E+01	  1.1308E-03	1.00
 2009	6	25	176	16	  4.4333E-02	  4.4685E-02	  3.2125E-01	  2.2230E+01	  9.4008E-02	  1.6475E-02	  6.8665E-02	  1.6772E-03	  4.0660E-01	  5.9601E+01	  8.3227E-04	0.98
 2009	6	25	176	17	  2.3747E-02	  2.3970E-02	  1.5857E-01	  1.4942E+01	  4.8042E-02	  7.1373E-03	  3.0998E-02	  8.4446E-04	  2.6571E-01	  4.0599E+01	  5.6840E-04	0.18
-2009	6	25	176	18	  1.1489E-02	  1.1639E-02	  6.0938E-02	  9.5940E+00	  2.1361E-02	  2.7167E-03	  1.1181E-02	  3.6380E-04	  1.6500E-01	  2.8219E+01	  4.0218E-04	0.00
-2009	6	25	176	19	  4.4310E-03	  4.5064E-03	  1.5708E-02	  4.7844E+00	  7.3816E-03	  8.6848E-04	  2.9540E-03	  1.1989E-04	  8.0542E-02	  1.3829E+01	  1.9559E-04	0.00
+2009	6	25	176	18	  1.1489E-02	  1.1639E-02	  6.0938E-02	  9.5939E+00	  2.1361E-02	  2.7167E-03	  1.1181E-02	  3.6380E-04	  1.6499E-01	  2.8218E+01	  4.0218E-04	0.00
+2009	6	25	176	19	  4.4311E-03	  4.5064E-03	  1.5708E-02	  4.7845E+00	  7.3817E-03	  8.6849E-04	  2.9540E-03	  1.1989E-04	  8.0542E-02	  1.3829E+01	  1.9559E-04	0.00
 2009	6	25	176	20	  1.0393E-03	  1.0615E-03	  2.7044E-03	  1.3335E+00	  1.6022E-03	  2.2336E-04	  5.9423E-04	  2.3987E-05	  2.2087E-02	  3.4720E+00	  4.6470E-05	0.55
 2009	6	25	176	21	  2.6633E-04	  2.7941E-04	  9.8975E-04	  3.2415E-01	  4.5976E-04	  1.2799E-04	  2.5344E-04	  7.2495E-06	  5.1306E-03	  8.4240E-01	  1.0747E-05	1.00
 2009	6	25	176	22	  1.9714E-05	  2.0659E-05	  1.0410E-04	  2.5303E-02	  3.4260E-05	  8.0706E-07	  1.6165E-05	  5.3195E-07	  4.0014E-04	  6.0046E-02	  7.3720E-07	0.98
