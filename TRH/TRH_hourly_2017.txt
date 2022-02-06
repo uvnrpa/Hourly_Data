@@ -1,54 +1,59 @@
 % Station Trondheim, mean hourly (UTC hour +/- 30 minutes) irradiances and sampling fraction (0= complete loss of measurements, 1=lossfree measurement)
-% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: Bjorn.Johnsen@dsa.no)
+% The station is drifted by DSA (former NRPA) - Norwegian Authority of Radiation and Nuclear Safety (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
-% Calculations and calibrations: Bj�rn Johnsen, Statens str�levern (Norwegian Radiation Protection Authority
+% Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
 % E-mail: Bjorn.Johnsen@dsa.no
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
-% CIE1998: Erythema action spectrum: Commission Internationale de l�Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
+% CIE1998: Erythema action spectrum: Commission Internationale de l’Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
 % UVB: ISO 21348 Definitions of Solar Irradiance Spectral Categories (280<=Wl<315 nm)
 % UVA: ISO 21348 Definitions of Solar Irradiance Spectral Categories (315<=Wl<400 nm)
 % NMSC: ISO/FDIS 28077:2016E Photocarcinogenesis Action Spectrum, (Non-Melanoma Skin Cancers, NMSC). CIE Central Bureau, Vienna
-% DNA: R. B. Setlow, The wavelengths in sunlight effective in producing skin cancer: a theoretical analysis", Proc. Nat. Acad. Sci., USA, 71 , No. 9,  pp. 3363-3366, 1974. Converted from effect per quantum to effect per energy. Downloaded from: Downloaded from: http://uv.biospherical.com/Version2/doserates/SetlowTUV.txt
+% DNA: R. B. Setlow, The wavelengths in sunlight effective in producing skin cancer: a theoretical analysis", Proc. Nat. Acad. Sci., USA, 71 , No. 9,  pp. 3363-3366, 1974. Converted from effect per quantum to effect per energy. Downloaded from: http://uv.biospherical.com/Version2/doserates/SetlowTUV.txt
 % VITD: CIE 174:2006, Action spectrum for the conversion of 7-DH7 to previtamin D3 in human skin
 % ANCHOVY: Action spectrum for damage to eggs and larvae of northern anchovy. Spectrum sugge and sted by: J.H. Hunter, J.H. Taylor, and H.G. Moser, "Effect of ultraviolet irradiation on eggs and larvae of the northern anchovy, Engraulis mordax, and the pacific mackerel, Scomber japonicus, during the embryonic stage", Photochemistry and Photobiology, 29, 325-338, 1979. Downloaded from: http://uv.biospherical.com/Version2/doserates/Hunter.txt
 % FLINTPLANT: Action spectrum for growth responses of plants. Action spectrum suggested by: S. D. Flint and M. M. Caldwell, "A biological spectral weighting function for ozone depletion research with higher plants", Physiologia Plantarum, 117,137-144, 2003. Downloaded from: http://uv.biospherical.com/Version2/doserates/Flint.txt
 % HEP: A. Brun & B. Hamre. Proposed action spectrum for Hematopoetic porfyri, HEP
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
-% Gaps in measurements complemented with the following data sets:
-% Str�ng-based data (http://strang.smhi.se/extraction/index.php) period: 1901	1902	1903	1904	1905	1906	1907	1908	1909	1910	
-% Octa-based data (http://eklima.met.no) period: 1899	
-% UV-Biometer based data (Finse only) period: 1900	- 1900
-% Pyranometer-based data (http://eklima.met.no, http://lmt.bioforsk.no. For Bergen: Data provided by Jan.Olseth@uib.no). Period: 1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019	
-% Seasonally mean period: 1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	
+% Gaps in measurements have been filled with ancillary measurement data (Finse), or clear sky modelled data, adjusted for cloud influence. Source of UV-cloud modification factors: Listed below for the respective station and period
+% STRÅNG-based data (http://strang.smhi.se/extraction/index.php) period: 1901	
+% Octa-based data from the Norwegian Centre for Climate Services, https://seklima.met.no/observations/, period: 1902	
+% Solar Light SL-501 UV-Biometer measurements (Finse only), from an instrument operated by DSA, period: 1900	- 1900
+% Pyranometer-based gapfilling for stations Landvik, Kise, Trondheim (Kvithamar), Tromsø (Holt), Andøya (Sortland), Blindern (Aas): Pyranometer data provided by Agrometeorology Norway (LMT), http://lmt.bioforsk.no. Period: 1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019	2020	2021	
+% Pyranometer-based gapfilling for station Bergen, period 1995-2021: Pyranometer data from the Radiation Observatory at the University of Bergen and clear sky modelled global radiation for all stations is provided by Jan-Asle Olseth (Jan.Olseth@uib.no).
+%
+% Pyranometer-based gapfilling for the stations Trondheim (Gloshaugen), Blindern, period 2017-2021: Pyranometer data from the Norwegian Centre for Climate Services, https://seklima.met.no/observations/
+% Pyranometer-based gapfilling for station Finse, period 2018-2021: Pyranometer data from the Finse Eco-Hydrological Observatory, provided by Norbert Pirk (norbert.pirk@geo.uio.no)
+% Pyranometer-based gapfilling for station Ny-Ålesund, period 1995-2021: (1): Maturilli, Marion; Herber, Andreas; König-Langlo, Gert (2014): Basic and other measurements of radiation from the Baseline Surface Radiation Network (BSRN) Station Ny-Ålesund in the years 1992 to 2013, reference list of 253 datasets. PANGAEA, https://doi.org/10.1594/PANGAEA.150000. (2): Maturilli, Marion (2020): Basic and other measurements of radiation at station Ny-Ålesund (2006-05 et seq). Alfred Wegener Institute - Research Unit Potsdam, PANGAEA, https://doi.org/10.1594/PANGAEA.914927
+% Seasonally mean period: 1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019	2020	
 %
 % Columns: Year	Mon	Day	Daynum	Hour	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
-2017	1	1	1	0	 -3.4442E-07	 -3.5114E-07	  2.1802E-06	  8.6602E-06	 -6.4028E-07	 -1.4306E-06	 -1.0242E-06	 -1.6918E-08	 -5.3445E-07	  5.8403E-05	  1.5614E-09	0.00
-2017	1	1	1	1	  4.7817E-07	  4.8181E-07	 -1.2941E-05	 -6.8671E-05	  2.6206E-07	  3.0629E-06	  3.3528E-07	  1.9438E-08	  1.7674E-06	 -4.4831E-04	 -8.2061E-09	0.00
-2017	1	1	1	2	  9.9811E-07	  9.9672E-07	  4.3111E-06	  2.8518E-05	  2.3080E-06	  2.1543E-06	  2.8545E-06	  4.7536E-08	  2.3175E-06	  1.8288E-04	  3.6371E-09	0.00
-2017	1	1	1	3	  5.2235E-07	  5.3513E-07	  5.7270E-06	  1.4072E-05	  1.5265E-06	  1.1287E-06	  2.4348E-06	  2.9241E-08	 -2.5569E-07	  8.3592E-05	  5.9184E-10	0.00
-2017	1	1	1	4	  2.1175E-06	  2.1151E-06	  1.8792E-05	  1.0655E-04	  5.4503E-06	  3.3165E-06	  6.7958E-06	  1.0366E-07	  4.2831E-06	  5.5627E-04	  1.0547E-08	0.00
-2017	1	1	1	5	  1.9615E-06	  1.9631E-06	  7.3395E-06	  5.9900E-05	  4.4768E-06	  4.4167E-06	  5.5885E-06	  9.3553E-08	  4.6250E-06	  1.9492E-04	  3.5436E-09	0.00
-2017	1	1	1	6	  4.4759E-07	  4.4213E-07	 -3.4006E-07	 -1.4838E-05	  8.2412E-07	  9.7574E-07	  6.6654E-07	  1.9402E-08	  1.6269E-06	 -4.0987E-04	 -7.0254E-09	0.00
-2017	1	1	1	7	  2.3174E-06	  2.3297E-06	  2.3679E-05	  1.7126E-04	  6.2485E-06	  3.6293E-06	  8.3209E-06	  1.1677E-07	  3.9784E-06	  8.7461E-04	  1.4651E-08	0.00
-2017	1	1	1	8	  5.7870E-06	  5.9623E-06	  4.7923E-05	  4.5601E-03	  1.2654E-05	  2.9405E-06	  1.1807E-05	  2.1059E-07	  7.2636E-05	  1.0939E-02	  1.3480E-07	0.00
-2017	1	1	1	9	  3.8507E-05	  4.0863E-05	  2.6687E-07	  7.1300E-02	  4.2604E-05	 -1.7046E-05	 -3.0164E-05	  4.8117E-07	  1.1366E-03	  1.7660E-01	  2.2147E-06	0.00
-2017	1	1	1	10	  1.8720E-04	  1.9620E-04	  5.7308E-04	  2.6614E-01	  2.8079E-04	 -1.0254E-05	  4.1126E-05	  4.0500E-06	  4.3076E-03	  6.4428E-01	  8.0965E-06	0.00
-2017	1	1	1	11	  3.9600E-04	  4.1250E-04	  1.0776E-03	  5.0532E-01	  6.1307E-04	  6.2137E-05	  1.7195E-04	  9.6637E-06	  8.3661E-03	  1.1933E+00	  1.4901E-05	0.00
-2017	1	1	1	12	  5.3337E-04	  5.5524E-04	  1.3437E-03	  6.6214E-01	  8.3086E-04	  1.1416E-04	  2.6395E-04	  1.3334E-05	  1.0989E-02	  1.5622E+00	  1.9475E-05	0.00
-2017	1	1	1	13	  2.5785E-04	  2.7030E-04	  6.7237E-04	  3.5218E-01	  3.9197E-04	  3.0323E-05	  9.6275E-05	  5.8721E-06	  5.6834E-03	  8.5255E-01	  1.0630E-05	0.00
-2017	1	1	1	14	  1.0627E-04	  1.1189E-04	  2.8185E-04	  1.6953E-01	  1.5325E-04	 -1.7541E-05	  1.4659E-05	  2.0145E-06	  2.6674E-03	  4.4920E-01	  5.8262E-06	0.00
-2017	1	1	1	15	  6.0100E-06	  6.1344E-06	  7.6655E-05	  2.9420E-03	  1.5718E-05	  2.9790E-06	  1.7971E-05	  2.6286E-07	  4.5277E-05	  7.0573E-03	  8.7963E-08	0.00
-2017	1	1	1	16	  7.3839E-07	  7.3990E-07	  1.0403E-05	  3.6060E-05	  2.1528E-06	  7.7065E-07	  2.8239E-06	  3.8218E-08	  7.6549E-07	  2.0070E-04	  3.7290E-09	0.00
-2017	1	1	1	17	  3.0516E-06	  3.0579E-06	  2.5562E-05	  1.0233E-04	  7.8999E-06	  5.4634E-06	  1.0378E-05	  1.5245E-07	  4.6883E-06	  7.9007E-04	  1.4758E-08	0.00
-2017	1	1	1	18	  1.4647E-06	  1.4649E-06	  8.1163E-06	  9.4077E-05	  3.4923E-06	  2.9408E-06	  4.3766E-06	  6.9847E-08	  3.7377E-06	  5.5820E-04	  1.0028E-08	0.00
-2017	1	1	1	19	 -4.2506E-07	 -4.3432E-07	 -1.2718E-05	  5.1050E-05	 -1.7353E-06	  2.2856E-08	 -2.6849E-06	 -2.7961E-08	  2.0892E-06	  3.1183E-04	  5.5840E-09	0.00
-2017	1	1	1	20	  9.6170E-07	  9.7790E-07	  4.7207E-06	 -8.6535E-05	  2.3994E-06	  2.5588E-06	  3.5620E-06	  5.1761E-08	 -4.2143E-07	 -8.0153E-04	 -1.5156E-08	0.00
-2017	1	1	1	21	  5.0349E-07	  5.1640E-07	  1.4712E-05	  2.3884E-05	  2.0329E-06	  9.9884E-09	  3.2013E-06	  3.1817E-08	 -1.4730E-06	  2.0802E-04	  3.0867E-09	0.00
-2017	1	1	1	22	 -1.1373E-07	 -1.2027E-07	 -7.0406E-07	 -1.4799E-05	 -3.2401E-07	 -4.0572E-07	 -6.3558E-07	 -6.7139E-09	  7.2942E-08	 -6.6538E-05	 -5.4470E-10	0.00
-2017	1	1	1	23	  9.6696E-07	  9.7020E-07	  1.1883E-05	 -5.6369E-05	  2.7778E-06	  1.4457E-06	  3.8121E-06	  5.1969E-08	 -4.0991E-07	 -2.1424E-04	 -2.9896E-09	0.00
+2017	1	1	1	0	 -3.4442E-07	 -3.5114E-07	  2.1802E-06	  8.6602E-06	 -6.4028E-07	 -1.4306E-06	 -1.0242E-06	 -1.6918E-08	 -5.3445E-07	  5.8403E-05	  1.5614E-09	0.98
+2017	1	1	1	1	  4.7817E-07	  4.8181E-07	 -1.2941E-05	 -6.8671E-05	  2.6206E-07	  3.0629E-06	  3.3528E-07	  1.9438E-08	  1.7674E-06	 -4.4831E-04	 -8.2061E-09	1.00
+2017	1	1	1	2	  9.9811E-07	  9.9672E-07	  4.3111E-06	  2.8518E-05	  2.3080E-06	  2.1543E-06	  2.8545E-06	  4.7536E-08	  2.3175E-06	  1.8288E-04	  3.6371E-09	0.98
+2017	1	1	1	3	  5.2235E-07	  5.3513E-07	  5.7270E-06	  1.4072E-05	  1.5265E-06	  1.1287E-06	  2.4348E-06	  2.9241E-08	 -2.5569E-07	  8.3592E-05	  5.9184E-10	1.00
+2017	1	1	1	4	  2.1175E-06	  2.1151E-06	  1.8792E-05	  1.0655E-04	  5.4503E-06	  3.3165E-06	  6.7958E-06	  1.0366E-07	  4.2831E-06	  5.5627E-04	  1.0547E-08	1.00
+2017	1	1	1	5	  1.9615E-06	  1.9631E-06	  7.3395E-06	  5.9900E-05	  4.4768E-06	  4.4167E-06	  5.5885E-06	  9.3553E-08	  4.6250E-06	  1.9492E-04	  3.5436E-09	0.98
+2017	1	1	1	6	  4.4759E-07	  4.4213E-07	 -3.4006E-07	 -1.4838E-05	  8.2412E-07	  9.7574E-07	  6.6654E-07	  1.9402E-08	  1.6269E-06	 -4.0987E-04	 -7.0254E-09	1.00
+2017	1	1	1	7	  2.3174E-06	  2.3297E-06	  2.3679E-05	  1.7126E-04	  6.2485E-06	  3.6293E-06	  8.3209E-06	  1.1677E-07	  3.9784E-06	  8.7461E-04	  1.4651E-08	1.00
+2017	1	1	1	8	  5.7870E-06	  5.9623E-06	  4.7923E-05	  4.5601E-03	  1.2654E-05	  2.9405E-06	  1.1807E-05	  2.1059E-07	  7.2636E-05	  1.0939E-02	  1.3480E-07	0.98
+2017	1	1	1	9	  3.8507E-05	  4.0863E-05	  2.6687E-07	  7.1300E-02	  4.2604E-05	 -1.7046E-05	 -3.0164E-05	  4.8117E-07	  1.1366E-03	  1.7660E-01	  2.2147E-06	1.00
+2017	1	1	1	10	  1.8720E-04	  1.9620E-04	  5.7308E-04	  2.6614E-01	  2.8079E-04	 -1.0254E-05	  4.1126E-05	  4.0500E-06	  4.3076E-03	  6.4428E-01	  8.0965E-06	1.00
+2017	1	1	1	11	  3.9600E-04	  4.1250E-04	  1.0776E-03	  5.0532E-01	  6.1307E-04	  6.2137E-05	  1.7195E-04	  9.6637E-06	  8.3661E-03	  1.1933E+00	  1.4901E-05	0.98
+2017	1	1	1	12	  5.3337E-04	  5.5524E-04	  1.3437E-03	  6.6214E-01	  8.3086E-04	  1.1416E-04	  2.6395E-04	  1.3334E-05	  1.0989E-02	  1.5622E+00	  1.9475E-05	1.00
+2017	1	1	1	13	  2.5785E-04	  2.7030E-04	  6.7237E-04	  3.5218E-01	  3.9197E-04	  3.0323E-05	  9.6275E-05	  5.8721E-06	  5.6834E-03	  8.5255E-01	  1.0630E-05	0.98
+2017	1	1	1	14	  1.0627E-04	  1.1189E-04	  2.8185E-04	  1.6953E-01	  1.5325E-04	 -1.7541E-05	  1.4659E-05	  2.0145E-06	  2.6674E-03	  4.4920E-01	  5.8262E-06	1.00
+2017	1	1	1	15	  6.0100E-06	  6.1344E-06	  7.6655E-05	  2.9420E-03	  1.5718E-05	  2.9790E-06	  1.7971E-05	  2.6286E-07	  4.5277E-05	  7.0573E-03	  8.7963E-08	1.00
+2017	1	1	1	16	  7.3839E-07	  7.3990E-07	  1.0403E-05	  3.6060E-05	  2.1528E-06	  7.7065E-07	  2.8239E-06	  3.8218E-08	  7.6549E-07	  2.0070E-04	  3.7290E-09	0.98
+2017	1	1	1	17	  3.0516E-06	  3.0579E-06	  2.5562E-05	  1.0233E-04	  7.8999E-06	  5.4634E-06	  1.0378E-05	  1.5245E-07	  4.6883E-06	  7.9007E-04	  1.4758E-08	1.00
+2017	1	1	1	18	  1.4647E-06	  1.4649E-06	  8.1163E-06	  9.4077E-05	  3.4923E-06	  2.9408E-06	  4.3766E-06	  6.9847E-08	  3.7377E-06	  5.5820E-04	  1.0028E-08	1.00
+2017	1	1	1	19	 -4.2506E-07	 -4.3432E-07	 -1.2718E-05	  5.1050E-05	 -1.7353E-06	  2.2856E-08	 -2.6849E-06	 -2.7961E-08	  2.0892E-06	  3.1183E-04	  5.5840E-09	0.98
+2017	1	1	1	20	  9.6170E-07	  9.7790E-07	  4.7207E-06	 -8.6535E-05	  2.3994E-06	  2.5588E-06	  3.5620E-06	  5.1761E-08	 -4.2143E-07	 -8.0153E-04	 -1.5156E-08	1.00
+2017	1	1	1	21	  5.0349E-07	  5.1640E-07	  1.4712E-05	  2.3884E-05	  2.0329E-06	  9.9884E-09	  3.2013E-06	  3.1817E-08	 -1.4730E-06	  2.0802E-04	  3.0867E-09	1.00
+2017	1	1	1	22	 -1.1373E-07	 -1.2027E-07	 -7.0406E-07	 -1.4799E-05	 -3.2401E-07	 -4.0572E-07	 -6.3558E-07	 -6.7139E-09	  7.2942E-08	 -6.6538E-05	 -5.4470E-10	0.98
+2017	1	1	1	23	  9.6696E-07	  9.7020E-07	  1.1883E-05	 -5.6369E-05	  2.7778E-06	  1.4457E-06	  3.8121E-06	  5.1969E-08	 -4.0991E-07	 -2.1424E-04	 -2.9896E-09	0.98
 2017	1	2	2	0	 -2.3257E-06	 -2.3273E-06	  1.3174E-05	  5.2167E-05	 -4.0503E-06	 -8.0798E-06	 -4.9366E-06	 -1.0498E-07	 -6.7002E-06	  3.8753E-04	  6.5838E-09	1.00
 2017	1	2	2	1	 -7.6853E-06	 -7.7162E-06	  1.5591E-06	  1.1933E-04	 -1.6116E-05	 -2.2425E-05	 -2.1207E-05	 -3.6820E-07	 -1.5085E-05	  7.9188E-04	  1.4135E-08	0.98
 2017	1	2	2	2	 -6.2128E-06	 -6.2357E-06	 -8.7330E-06	  6.4910E-06	 -1.3624E-05	 -1.6890E-05	 -1.8024E-05	 -2.9978E-07	 -1.1915E-05	 -2.2325E-04	 -4.3291E-09	1.00

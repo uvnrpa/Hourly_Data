@@ -1,28 +1,33 @@
 % Station Bergen, mean hourly (UTC hour +/- 30 minutes) irradiances and sampling fraction (0= complete loss of measurements, 1=lossfree measurement)
-% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: Bjorn.Johnsen@dsa.no)
+% The station is drifted by DSA (former NRPA) - Norwegian Authority of Radiation and Nuclear Safety (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
-% Calculations and calibrations: Bj�rn Johnsen, Statens str�levern (Norwegian Radiation Protection Authority
+% Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
 % E-mail: Bjorn.Johnsen@dsa.no
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
-% CIE1998: Erythema action spectrum: Commission Internationale de l�Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
+% CIE1998: Erythema action spectrum: Commission Internationale de l’Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
 % UVB: ISO 21348 Definitions of Solar Irradiance Spectral Categories (280<=Wl<315 nm)
 % UVA: ISO 21348 Definitions of Solar Irradiance Spectral Categories (315<=Wl<400 nm)
 % NMSC: ISO/FDIS 28077:2016E Photocarcinogenesis Action Spectrum, (Non-Melanoma Skin Cancers, NMSC). CIE Central Bureau, Vienna
-% DNA: R. B. Setlow, The wavelengths in sunlight effective in producing skin cancer: a theoretical analysis", Proc. Nat. Acad. Sci., USA, 71 , No. 9,  pp. 3363-3366, 1974. Converted from effect per quantum to effect per energy. Downloaded from: Downloaded from: http://uv.biospherical.com/Version2/doserates/SetlowTUV.txt
+% DNA: R. B. Setlow, The wavelengths in sunlight effective in producing skin cancer: a theoretical analysis", Proc. Nat. Acad. Sci., USA, 71 , No. 9,  pp. 3363-3366, 1974. Converted from effect per quantum to effect per energy. Downloaded from: http://uv.biospherical.com/Version2/doserates/SetlowTUV.txt
 % VITD: CIE 174:2006, Action spectrum for the conversion of 7-DH7 to previtamin D3 in human skin
 % ANCHOVY: Action spectrum for damage to eggs and larvae of northern anchovy. Spectrum sugge and sted by: J.H. Hunter, J.H. Taylor, and H.G. Moser, "Effect of ultraviolet irradiation on eggs and larvae of the northern anchovy, Engraulis mordax, and the pacific mackerel, Scomber japonicus, during the embryonic stage", Photochemistry and Photobiology, 29, 325-338, 1979. Downloaded from: http://uv.biospherical.com/Version2/doserates/Hunter.txt
 % FLINTPLANT: Action spectrum for growth responses of plants. Action spectrum suggested by: S. D. Flint and M. M. Caldwell, "A biological spectral weighting function for ozone depletion research with higher plants", Physiologia Plantarum, 117,137-144, 2003. Downloaded from: http://uv.biospherical.com/Version2/doserates/Flint.txt
 % HEP: A. Brun & B. Hamre. Proposed action spectrum for Hematopoetic porfyri, HEP
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
-% Gaps in measurements complemented with the following data sets:
-% Str�ng-based data (http://strang.smhi.se/extraction/index.php) period: 2014	2015	2016	
-% Octa-based data (http://eklima.met.no) period: 1901	1902	1903	1904	1905	1906	1907	1908	1909	1910	
-% UV-Biometer based data (Finse only) period: 1900	- 1900
-% Pyranometer-based data (http://eklima.met.no, http://lmt.bioforsk.no. For Bergen: Data provided by Jan.Olseth@uib.no). Period: 1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2017	2018	2019	
-% Seasonally mean period: 1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	
+% Gaps in measurements have been filled with ancillary measurement data (Finse), or clear sky modelled data, adjusted for cloud influence. Source of UV-cloud modification factors: Listed below for the respective station and period
+% STRÅNG-based data (http://strang.smhi.se/extraction/index.php) period: 1901	
+% Octa-based data from the Norwegian Centre for Climate Services, https://seklima.met.no/observations/, period: 2014	
+% Solar Light SL-501 UV-Biometer measurements (Finse only), from an instrument operated by DSA, period: 1900	- 1900
+% Pyranometer-based gapfilling for stations Landvik, Kise, Trondheim (Kvithamar), Tromsø (Holt), Andøya (Sortland), Blindern (Aas): Pyranometer data provided by Agrometeorology Norway (LMT), http://lmt.bioforsk.no. Period: 1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2015	2016	2017	2018	2019	2020	2021	
+% Pyranometer-based gapfilling for station Bergen, period 1995-2021: Pyranometer data from the Radiation Observatory at the University of Bergen and clear sky modelled global radiation for all stations is provided by Jan-Asle Olseth (Jan.Olseth@uib.no).
+%
+% Pyranometer-based gapfilling for the stations Trondheim (Gloshaugen), Blindern, period 2017-2021: Pyranometer data from the Norwegian Centre for Climate Services, https://seklima.met.no/observations/
+% Pyranometer-based gapfilling for station Finse, period 2018-2021: Pyranometer data from the Finse Eco-Hydrological Observatory, provided by Norbert Pirk (norbert.pirk@geo.uio.no)
+% Pyranometer-based gapfilling for station Ny-Ålesund, period 1995-2021: (1): Maturilli, Marion; Herber, Andreas; König-Langlo, Gert (2014): Basic and other measurements of radiation from the Baseline Surface Radiation Network (BSRN) Station Ny-Ålesund in the years 1992 to 2013, reference list of 253 datasets. PANGAEA, https://doi.org/10.1594/PANGAEA.150000. (2): Maturilli, Marion (2020): Basic and other measurements of radiation at station Ny-Ålesund (2006-05 et seq). Alfred Wegener Institute - Research Unit Potsdam, PANGAEA, https://doi.org/10.1594/PANGAEA.914927
+% Seasonally mean period: 1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019	2020	
 %
 % Columns: Year	Mon	Day	Daynum	Hour	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
 2003	1	1	1	0	  1.1011E-06	  1.1017E-06	  7.2613E-06	  8.3835E-05	  2.4871E-06	  1.2317E-06	  2.7611E-06	  5.2276E-08	  2.3453E-06	  1.1392E-03	  2.1908E-08	0.98
@@ -2192,12 +2197,12 @@
 2003	4	1	91	4	 -3.4060E-07	 -3.4583E-07	  8.2914E-07	  1.1699E-04	 -6.3275E-07	 -6.4598E-07	 -7.0084E-07	 -1.8129E-08	  1.0898E-06	  4.7540E-04	  6.3930E-09	1.00
 2003	4	1	91	5	  1.6460E-05	  1.7433E-05	  2.2413E-05	  2.8091E-02	  2.3123E-05	  1.9155E-06	  4.9765E-06	  2.8269E-07	  4.5139E-04	  6.8627E-02	  8.2778E-07	0.98
 2003	4	1	91	6	  1.6401E-04	  1.7189E-04	  1.3282E-04	  2.4492E-01	  2.3041E-04	  2.5552E-05	  3.3309E-05	  3.3264E-06	  4.0399E-03	  5.7798E-01	  7.0903E-06	1.00
-2003	4	1	91	7	  5.8572E-04	  6.0167E-04	  1.4692E-03	  7.0197E-01	  9.1626E-04	  1.0400E-04	  2.6640E-04	  1.4616E-05	  1.1808E-02	  1.8205E+00	  2.4188E-05	0.15
-2003	4	1	91	8	  7.2835E-04	  7.3964E-04	  3.1094E-03	  7.1583E-01	  1.2647E-03	  1.3954E-04	  5.3968E-04	  2.0932E-05	  1.2206E-02	  2.0139E+00	  2.8250E-05	0.00
-2003	4	1	91	9	  1.3939E-03	  1.4119E-03	  7.5647E-03	  1.1426E+00	  2.6006E-03	  3.1740E-04	  1.3531E-03	  4.4222E-05	  1.9847E-02	  3.1290E+00	  4.3640E-05	0.00
-2003	4	1	91	10	  2.0969E-03	  2.1209E-03	  1.2693E-02	  1.5219E+00	  4.0718E-03	  5.3655E-04	  2.3499E-03	  7.0083E-05	  2.6814E-02	  4.0875E+00	  5.6777E-05	0.00
-2003	4	1	91	11	  2.2281E-03	  2.2517E-03	  1.4208E-02	  1.5004E+00	  4.4213E-03	  6.1193E-04	  2.6945E-03	  7.6560E-05	  2.6689E-02	  3.9825E+00	  5.5183E-05	0.33
-2003	4	1	91	12	  6.5489E-03	  6.6166E-03	  4.1083E-02	  4.4032E+00	  1.2875E-02	  1.7029E-03	  7.6128E-03	  2.2405E-04	  7.8598E-02	  1.0489E+01	  1.3477E-04	1.00
+2003	4	1	91	7	  4.3493E-04	  4.4812E-04	  1.0124E-03	  5.2417E-01	  6.7548E-04	  7.9496E-05	  1.8636E-04	  1.0807E-05	  8.8225E-03	  1.2955E+00	  1.6669E-05	0.15
+2003	4	1	91	8	  5.6684E-04	  5.7554E-04	  2.4987E-03	  5.3583E-01	  9.9611E-04	  1.1194E-04	  4.3631E-04	  1.6632E-05	  9.1675E-03	  1.4334E+00	  1.9537E-05	0.00
+2003	4	1	91	9	  1.2105E-03	  1.2260E-03	  6.7614E-03	  9.5549E-01	  2.2840E-03	  2.8388E-04	  1.2174E-03	  3.9166E-05	  1.6651E-02	  2.4881E+00	  3.3719E-05	0.00
+2003	4	1	91	10	  1.8207E-03	  1.8414E-03	  1.1307E-02	  1.2768E+00	  3.5713E-03	  4.7821E-04	  2.1050E-03	  6.1966E-05	  2.2561E-02	  3.2627E+00	  4.4042E-05	0.00
+2003	4	1	91	11	  2.1301E-03	  2.1525E-03	  1.3952E-02	  1.3837E+00	  4.2720E-03	  6.0151E-04	  2.6623E-03	  7.4584E-05	  2.4689E-02	  3.4933E+00	  4.7037E-05	0.33
+2003	4	1	91	12	  6.5559E-03	  6.6236E-03	  4.1209E-02	  4.3969E+00	  1.2899E-02	  1.7084E-03	  7.6405E-03	  2.2460E-04	  7.8502E-02	  1.0433E+01	  1.3370E-04	1.00
 2003	4	1	91	13	  1.6630E-02	  1.6802E-02	  1.0418E-01	  1.1263E+01	  3.2646E-02	  4.3212E-03	  1.9302E-02	  5.6870E-04	  2.0070E-01	  2.7131E+01	  3.5012E-04	1.00
 2003	4	1	91	14	  1.6709E-02	  1.6913E-02	  9.7823E-02	  1.2389E+01	  3.1887E-02	  4.0793E-03	  1.7609E-02	  5.5494E-04	  2.1830E-01	  3.0435E+01	  3.9521E-04	0.98
 2003	4	1	91	15	  9.0876E-03	  9.2336E-03	  4.6128E-02	  7.5874E+00	  1.6553E-02	  2.0731E-03	  8.0239E-03	  2.8710E-04	  1.3239E-01	  1.8157E+01	  2.3120E-04	1.00
