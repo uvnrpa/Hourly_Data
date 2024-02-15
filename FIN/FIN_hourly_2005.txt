@@ -2,7 +2,7 @@
 % The station is drifted by DSA (former NRPA) - Norwegian Authority of Radiation and Nuclear Safety (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
 % Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
-% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 03-Feb-2023 11:15:26
+% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 15-Feb-2024 12:01:45
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -21,7 +21,7 @@
 % STRÅNG-based data (http://strang.smhi.se/extraction/index.php) period: 2011	2012	2013	2014	2015	2016	
 % Octa-based data from the Norwegian Centre for Climate Services, https://seklima.met.no/observations/, period: 	
 % Solar Light SL-501 UV-Biometer measurements (Finse only), from an instrument operated by DSA, period: 1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	
-% Pyranometer-based gapfilling for stations Landvik, Kise, Trondheim (Kvithamar), Tromsø (Holt), Andøya (Sortland), Blindern (Aas), Kjeller (Skjetten): Pyranometer data provided by Agrometeorology Norway (LMT), http://lmt.bioforsk.no. Period: 2017	2018	2019	2020	2021	2022	
+% Pyranometer-based gapfilling for stations Landvik, Kise, Trondheim (Kvithamar), Tromsø (Holt), Andøya (Sortland), Blindern (Aas), Kjeller (Skjetten): Pyranometer data provided by Agrometeorology Norway (LMT), http://lmt.bioforsk.no. Period: 2017	2018	2019	2020	2021	2022	2023	
 % Pyranometer-based gapfilling for station Bergen, period 1995-now: Pyranometer data from the Radiation Observatory at the University of Bergen and clear sky modelled global radiation for all stations is provided by Jan-Asle Olseth (Jan.Olseth@uib.no). Data past 2014 downloaded from https://veret.gfi.uib.no/taarn
 %
 % Pyranometer-based gapfilling for the stations Trondheim (Gloshaugen), Blindern, period 2017-now: Pyranometer data from the Norwegian Centre for Climate Services, https://seklima.met.no/observations/
@@ -30,7 +30,7 @@
 % Seasonally mean period: 2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019	2020	
 %
 % Columns: Year	Mon	Day	Daynum	Hour	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
-2005	1	1	1	0	  2.3668E-05	  2.3056E-05	  9.4563E-05	  1.8153E-04	  4.7285E-05	  5.9951E-05	  6.7400E-05	  1.5261E-06	  2.8662E-05	 -6.2452E-05	 -4.5752E-09	0.98
+2005	1	1	1	0	  2.3680E-05	  2.3068E-05	  9.4611E-05	  1.8156E-04	  4.7309E-05	  5.9981E-05	  6.7434E-05	  1.5268E-06	  2.8676E-05	 -6.2493E-05	 -4.5767E-09	0.98
 2005	1	1	1	1	  1.3136E-05	  1.2731E-05	  5.1714E-05	  2.6027E-04	  2.5789E-05	  3.2736E-05	  3.6240E-05	  8.5113E-07	  1.7193E-05	  3.9914E-04	  1.3687E-09	1.00
 2005	1	1	1	2	 -1.4889E-06	 -1.5200E-06	 -7.9283E-06	  1.1722E-04	 -3.4843E-06	 -4.0794E-06	 -5.4112E-06	 -9.1241E-08	 -9.3569E-07	  2.6134E-04	  1.8623E-09	0.98
 2005	1	1	1	3	 -6.9754E-06	 -6.8462E-06	 -2.9121E-05	  3.9344E-05	 -1.4328E-05	 -1.8110E-05	 -2.0939E-05	 -4.4753E-07	 -7.5208E-06	 -2.2917E-04	 -4.2107E-09	1.00
