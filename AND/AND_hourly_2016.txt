@@ -2,7 +2,7 @@
 % The station is drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
 % Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
-% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 15-Feb-2024 12:01:03
+% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 02-Mar-2024 14:02:46
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
